@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
-# 生成一个简单的示例时间序列数据（假设为股票价格）
+# 生成一个简单的示例时间序列数据
 np.random.seed(42)
 dates = pd.date_range('20230101', periods=100)
 data = pd.DataFrame(np.random.randn(100, 1), index=dates, columns=['Price'])
